@@ -1,0 +1,37 @@
+:root {
+  --bg: #0a0b0a;
+  --surface: #111311;
+  --surface-2: #171a17;
+  --border: #232723;
+  --border-strong: #343a34;
+  --text: #ecefea;
+  --text-muted: #8b938b;
+  --text-faint: #5b625b;
+  --accent: #39ff14;
+  --accent-dim: rgba(57, 255, 20, 0.14);
+  --accent-ink: #031200;
+  --danger: #ff5c5c;
+  --warn: #ffc247;
+  --font-ui: "Geist Variable", sans-serif;
+  --font-numbers: "Geist Mono Variable", monospace;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: dark;
+}
+/* Tailwind v4's CSS-first theme configuration; the tokens above are the source. */
+@theme inline {
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-2);
+  --color-outline: var(--border);
+  --color-outline-strong: var(--border-strong);
+  --color-foreground: var(--text);
+  --color-muted: var(--text-muted);
+  --color-faint: var(--text-faint);
+  --color-prediction: var(--accent);
+  --color-prediction-range: var(--accent-dim);
+  --color-prediction-ink: var(--accent-ink);
+  --color-error: var(--danger);
+  --color-warning: var(--warn);
+  --font-sans: var(--font-ui);
+  --font-mono: var(--font-numbers);
+}
